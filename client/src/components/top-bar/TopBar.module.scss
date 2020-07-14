@@ -1,0 +1,16 @@
+@import "../../styles/colors";
+@import "../../styles/responsive";
+
+.TopBar {
+  background-color: darken($color, 25);
+  color: $smoky-white;
+  .container {
+    @extend .container;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

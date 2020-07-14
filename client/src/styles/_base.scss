@@ -1,0 +1,30 @@
+// Border box everywhere
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Open sans", arial, sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open sans", arial, sans-serif;
+  font-weight: 300;
+}
+
+p {
+  color: $text-color;
+  font-size: 13px;
+}

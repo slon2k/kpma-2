@@ -1,0 +1,14 @@
+.Logo {
+  width: 130px;
+  .image {
+    max-width: 100%;
+  }
+
+  a {
+    border-bottom: none !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

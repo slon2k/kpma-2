@@ -1,0 +1,17 @@
+@import "../../styles/colors";
+
+.LanguageSwitcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .select {
+    margin: 10px 0;
+    padding: 5px;
+    color: $smoky-white;
+    background-color: darken($color: $color, $amount: 25);
+  }
+  .option {
+    color: $smoky-white;
+    margin: 10px;
+  }
+}

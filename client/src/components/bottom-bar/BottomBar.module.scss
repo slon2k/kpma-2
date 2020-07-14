@@ -1,0 +1,11 @@
+@import "../../styles/colors";
+
+.BottomBar {
+  font-size: 12px;  
+  background-color: darken($text-color, 10%);
+  padding: 10px 0;
+  .copyright {
+    color: darken($smoky-white, 10%);
+    font-weight: 600;
+  }
+}

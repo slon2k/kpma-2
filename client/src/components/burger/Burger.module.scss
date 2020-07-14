@@ -1,0 +1,50 @@
+@import "../../styles/colors";
+
+.Burger {
+  display: none;
+  margin: 20px;
+
+  .line,
+  .line::before,
+  .line::after {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: $smoky-white;
+    transition: all ease 200ms;
+  }
+
+  .line {
+    top: 9px;
+  }
+
+  .line::before {
+    transform: translateY(-9px);
+    content: "";
+  }
+
+  .line::after {
+    transform: translateY(9px);
+    content: "";
+  }
+
+  &.open {
+    .line {
+      background-color: transparent;
+    }
+    .line::before {
+      transform: rotate(45deg) translateY(0);
+    }
+    .line::after {
+      transform: rotate(-45deg) translateY(0);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 30px;
+  }
+}

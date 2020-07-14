@@ -1,0 +1,63 @@
+@import "../../styles/colors";
+@import "../../styles/responsive";
+
+.FooterContent {
+  background: $text-color;
+  color: darken($smoky-white, 10%);
+  font-size: 16px;
+  a {
+    color: darken($smoky-white, 10%);
+    font-size: 16px;
+  }
+  a:hover {
+    color: darken($smoky-white, 25%);
+  }
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    margin: 10px
+  }
+  .flexcontainer {
+    @extend .container;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section {
+    h3 {
+      font-size: 24px;
+    }
+  }
+  .left {
+    @extend .section;
+    order: 2;
+    width: 25%;
+    @media screen and (max-width: 991px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .center {
+    @extend .section;
+    order: 3;
+    width: 50%;
+    @media screen and (max-width: 991px) {
+      order: 1;
+      width: 100%;
+    }
+  }
+  .right {
+    @extend .section;
+    order: 4;
+    width: 25%;
+    @media screen and (max-width: 991px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

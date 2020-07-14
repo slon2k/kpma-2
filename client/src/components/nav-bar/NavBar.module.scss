@@ -1,0 +1,30 @@
+@import "../../styles/colors";
+@import "../../styles/responsive";
+
+.NavBar {
+  position: relative;
+  transition: 1000;
+  width: 100%;
+  z-index: 999;
+  background-color: $color;
+  color: $text-color;
+  a {
+    color: $smoky-white;
+    &:hover {
+      color: darken($smoky-white, 10);
+    }
+  }
+  &.scrolled {
+    background-color: black;
+    opacity: 0.85;
+    position: fixed;
+    top: 0;
+  }
+  .container {
+    @extend .container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
